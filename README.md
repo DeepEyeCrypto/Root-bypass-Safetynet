@@ -58,5 +58,5 @@ chmod +x root_bypass.sh
 4. Install Magisk modules
 5. Configure MagiskHide DenyList
 6. Exit
-7. Auto Install and Fix all 
-Choose an option:
+7. Auto Install and Fix all
+8. Choose an option:
