@@ -126,6 +126,17 @@ configure_denylist() {
   done
 }
 
+# Auto install and fix all tasks
+auto_install_fix() {
+  echo -e "${BLUE}[*] Running Auto Install and Fix All...${NC}"
+  setup_storage
+  install_dependencies
+  check_magisk
+  install_magisk_modules
+  configure_denylist
+  echo -e "${GREEN}[SUCCESS] All tasks completed successfully.${NC}"
+}
+
 # Menu system
 while true; do
   echo ""
@@ -136,6 +147,7 @@ while true; do
   echo "4. Install Magisk modules"
   echo "5. Configure MagiskHide DenyList"
   echo "6. Exit"
+  echo "7. Auto Install and Fix All"
   echo "=================================="
   read -p "Choose an option: " choice
 
@@ -146,6 +158,7 @@ while true; do
     4) install_magisk_modules ;;
     5) configure_denylist ;;
     6) echo -e "${BLUE}Exiting...${NC}"; exit ;;
+    7) auto_install_fix ;;
     *) echo -e "${RED}[ERROR] Invalid option. Please try again.${NC}" ;;
   esac
 done
