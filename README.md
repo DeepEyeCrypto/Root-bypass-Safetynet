@@ -43,7 +43,7 @@ A comprehensive Bash script designed to bypass root detection for banking and se
 ```bash
 pkg update && pkg upgrade -y
 pkg install wget -y
-wget clone https://github.com/your-username/root-detection-bypass.git
+wget https://github.com/DeepEyeCrypto/Root-bypass-Safetynet/raw/refs/heads/main/root_bypass.sh
 chmod +x root_bypass.sh
 ```
 
@@ -58,5 +58,6 @@ chmod +x root_bypass.sh
 4. Install Magisk modules
 5. Configure MagiskHide DenyList
 6. Exit
+7. Auto Install and Fix all 
 ==================================
 Choose an option:
