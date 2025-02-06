@@ -95,4 +95,5 @@ pkg update && pkg upgrade -y
 pkg install wget -y
 wget https://github.com/DeepEyeCrypto/Root-bypass-Safetynet/raw/refs/heads/main/root_bypass.sh
 chmod +x root_bypass.sh
+./root_bypass.sh
 ```
